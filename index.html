@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outer-image">
+        <div class="logo">
+        <div class="logo-img">
+            <img src="images/odin-lined.png" alt="">
+        </div>
+        <div class="text">ODIN</div>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="header"><strong>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Signup up <em>now</em>
+            to get started.<br><br>You <em>know</em> you want to.
+        </strong>
+        </div>
+        <form action="" class="odinform">
+            <div class="main">
+            <h1>Let's do this!</h1>
+            <div class="form-row">
+                <div class="col">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname"  maxlength="20" minlength="1" >
+                </div>
+                <div class="col">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" maxlength="20">
+                </div>
+            </div>    
+            <div class="form-row">
+                <div class="col">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" maxlength="30" minlength="6" pattern="(\..{2,4})$">
+                </div>
+                <div class="col">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" maxlength="15"  pattern="^(([0-9]{4,})|(\+[0-9]{4,}))">
+                </div>
+            </div>    
+            <div class="form-row">
+                <div class="col">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" maxlength="30">
+                </div>
+                <div class="col">
+                    <label for="confirm_password">CONFIRM PASSWORD <span id='message'></span></label>
+                    <input type="password" id="confirm_password" maxlength="30" onkeyup="check()">
+                </div>
+            </div>   
+        </div>
+        </form>
+        <div>
+            <button>Create Account</button>
+        </div>
+        <div class="log-in">Already have an account?<a href="google.com">Log in</a>
+        </div>
+    </div>
+</body>
+<script src="signupform.js"></script>
+</html>
