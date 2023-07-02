@@ -11,7 +11,8 @@
     
   div.outer-image{
     display: flex;
-    flex: 1;
+    flex: 1;  
+    flex-direction: column;
     width: 40vw;
     height: 100vh;
     background-image: url("images/bg-img.jpg");
@@ -23,22 +24,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: min(55vh,500px);
   }
 
   div.outer-image .logo{
-    margin-top: 20vh;
-    display: flex;
-    flex: 1;
-    height: 20vh;
+    margin-top: max(20vh, 60px);
+    height: max(20vh, 100px);
     background-color: rgb(128, 128, 128, 0.3) ;
     padding: 2vh;
   }  
  
   .logo-img{
-  display: flex;
-  align-items: center;
-
-  }
+    display: flex;
+    align-items: center;
+    }
   
   img{
     height: clamp(1vh,15vh,10vw);
@@ -54,6 +53,19 @@
   margin-bottom: 2.5vh;
   align-items: center;
 }
+div.footer{
+  position:relative;
+  width:100%;
+  bottom:0;
+  text-align:center;
+  font-size: max(0.7vw,5px);
+
+}
+.footer>a{
+  margin: 0 5px ;
+  text-decoration: none;
+  color: gray;
+}
 
   div.content{
     display: flex;
@@ -68,7 +80,7 @@
     display: flex;
     /*align-items: flex-end;*/
     font-size: min(2.2vw,20px);
-    margin: 15vh 12vw 5vh 3vw;
+    margin: max(10vh, 60px) 12vw 10vh 3vw;
     font-weight: lighter;
     
   }
